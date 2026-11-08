@@ -1,16 +1,18 @@
 # ChatApp
 
-<img src="https://i.ibb.co/b7R4Mnc/Screen-Shot-2020-12-28-at-12-26-32-PM.png">
+Real-time chat built with React, MobX and TypeScript on the client, and an Express server with WebSockets (`express-ws`).
+
+<img src="https://i.ibb.co/b7R4Mnc/Screen-Shot-2020-12-28-at-12-26-32-PM.png" alt="ChatApp screenshot">
 
 ## Requirements
 
-- Node 10+ (check with `node --version`)
-- NPM 6+ (check with `npm --version`)
+- Node 10 to 16 (check with `node --version`). The project uses webpack 4, which fails on Node 17+ with `ERR_OSSL_EVP_UNSUPPORTED`. On a newer Node, run with `NODE_OPTIONS=--openssl-legacy-provider`.
+- Yarn 1 (check with `yarn --version`). The repository ships a `yarn.lock`.
 
 ## Running the project
 
-- `yarn` to get all of the dependencies
-- `yarn start` to run the API and webpack servers
+- `yarn` to install the dependencies
+- `yarn start` to run the API server (port 5000) and the webpack dev server
 
 A webpage should open up for you automatically.
 
